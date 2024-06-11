@@ -9,13 +9,13 @@
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header style="flex: 1;">
         <div class="container">
             <nav class="navbar">
                 <!-- logo -->
                 <div style="margin-left: 48%; margin-right: 10%; display: flex; align-items: center;">
                     <border style="border-color: brown;">
-                        <img class="logo" src="icon/logoweb.png" alt="MyData" >
+                        <a href="index.html"><img class="logo" src="icon/logoweb.png" alt="MyData" ></a>
                 </border>
             </div>
                 
@@ -49,40 +49,41 @@
                     
             </nav>
         </div>
-        <div style="display: flex; justify-content: center; align-items: center;">
-                        <input class="input1" type="text" placeholder="검색"><br>
+        <div class="search" style="display: flex; justify-content: center; align-items: center;">
+                        <!-- <input class="input1" type="text" placeholder="검색"><br> -->
+                        <script async src="https://cse.google.com/cse.js?cx=65c688fb8324347e9">
+                        </script>
+                        <div class="gcse-search"></div>
                     </div>
                       <!-- 검색 button -->
                     <div style="display: flex;justify-content: center; align-items: center;">
-                        <input class="input2" type="image" src="icon/logoweb1.png" alt="전송">
-                        <input class="input2" type="image" src="icon/logostook.png" alt="전송">
-                        <input class="input2" type="image" src="icon/logocar.png" alt="전송">
-                        <input class="input2" type="image" src="icon/logoweather.jpg" alt="전송">
-                        <input class="input2" type="image" src="icon/logonews.jpg" alt="전송">
-                        <input class="input2" type="image" src="icon/logobook.jpg" alt="전송">
+                        <a href="index.html" class="style"><input class="input2" type="image" src="icon/logoweb1.png" alt="전송"></a>
+                        <a href="@"class="style"><input class="input2" type="image" src="icon/logostook.png" alt="전송"></a>
+                        <a href="MyCar/mycarpaper.html"class="style"><input class="input2" type="image" src="icon/logocar.png" alt="전송"></a>
+                        <a href="weather/weatherpaper.html" class="style"><input class="input2" type="image" src="icon/logoweather.jpg" alt="전송"></a>
+                        <a href="news/newspaper.html"class="style"><input class="input2" type="image" src="icon/logonews.jpg" alt="전송"></a>
+                        <a href="reading/readingpaper.html"class="style"><input class="input2" type="image" src="icon/logobook.jpg" alt="전송"></a>
                     </div>
                     
-
-    </header>
-  
-  
- 
- 
-
-<footer>
-     <!-- content  -->
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <div class="aside1" style="overflow: hidden;">
-            <video autoplay loop controls>
-                <source src="#" type="video/mp4">
-            </video>
+        <div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div class="aside1" style="overflow: hidden;">
+                    <video autoplay loop controls>
+                        <source src="#" type="video/mp4">
+                    </video>
+                    <audio autoplay controls muted style="display: none;">
+                        <source src="backgroundsound.m4a">
+                    </audio>
+                </div>
+                <div class="iframe-container">
+                <aside class="aside2"> 
+                    <iframe src="https://www.kopo.ac.kr/incheon/index.do" frameborder="0" class="iframe"></iframe>
+                </aside>
+            </div>
+            </div>
+           
         </div>
-        <aside class="aside2"> youtube2</aside>
-    </div>
-    <audio autoplay controls muted style="display: none;">
-        <source src="backgroundsound.m4a">
-    </audio>
-
+<div>
     <!-- 도움 -->
     <div id="support-button">?</div>
     <div id="support-panel">
@@ -91,7 +92,11 @@
         <p>이메일: support@example.com</p>
         <p>전화: 123-456-7890</p>
     </div>
-</footer>
+</div>
+
+    </header>
+  
+
 
       
 <script src="mainpaper.js"></script>

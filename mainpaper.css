@@ -17,6 +17,10 @@ body{
     background-attachment: scroll;
     background-position-y: cover;
     background-position-x: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
 }
 img{
     max-width: 100%;
@@ -29,6 +33,7 @@ img{
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    flex: 1;
 }
 button{
     text-align: center;
@@ -156,6 +161,13 @@ header{
 }
 /* button animation */
 /* 검색 buttom */
+.search{
+    max-width: 15000px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+
+}
 .input1{
     font-size: larger;
         border-radius: 30px;
@@ -184,6 +196,9 @@ header{
     background-size: cover;
     object-fit: cover;
 }
+.style{
+    padding: 10px;
+}
 /* content */
 .aside1{
     border-radius: 20px;
@@ -191,7 +206,7 @@ header{
     max-width: 600px;
     height: 400px;
     display: flex;
-    margin-top: 350px;
+    margin-top: 20px;
     border: solid;
     border-color: rgb(27, 197, 64);
     overflow: hidden;
@@ -203,17 +218,17 @@ header{
     height: 400px;
     display: flex;
     margin-left: 70px;
-    margin-top: 350px;
+    margin-top: 20px;
     border: solid;
     border-color: rgb(85, 155, 28);
 }
 /* footer */
-.navbar__footer{
+/* .navbar__footer{
     border: none;
     background-color: black;
     background-position-x: 100%;
     background-position-y: 100%;
-}
+} */
 #support-button {
     position: fixed;
     bottom: 10px;
@@ -241,4 +256,16 @@ header{
     border-radius: 5px;
     display: none;
     z-index: 1000;
+}
+
+
+.iframe-container {
+    
+    
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+    border: 10%;
 }
